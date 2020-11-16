@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="stylesheet2.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class = "backContainer">
+            <div class="appContainer">
+                <div class ="topBar">
+                    <p>Saver</p>
+                </div>
+
+                <div class = totalSaved>
+                    <h1>You have saved   £</h1>
+                    <h1 id=total>0.00</h1>
+                </div>
+
+                <div id="gridBlock">
+                </div>
+
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                      <h1>Create a new Saver</h1>
+                  
+                      <label for="saverName"><b>Saver Name</b></label>
+                      <input type="text" placeholder="Saver Name" id="saverForm" name=saverName/>
+                  
+                      <label for="cost"><b>Cost</b></label>
+                      <input type="text" placeholder="Cost" id="costForm" name="cost"/>
+
+                      <label for="goal"><b>Goal</b></label>
+                      <input type="text" placeholder="goal" id="goalForm" name="goal"/>  
+                  
+                      <button type="button" class="btn" id ="plus">Submit</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                  </div>
+
+                <div class="bottom">
+                    <button id ="open" class="open-button" onclick="openForm()">+</button>
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+    <script src="toDo2.js"></script>
+</html>
